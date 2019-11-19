@@ -8,7 +8,14 @@ body{
     width: 100%;
     height: 82.6%;
 }
-
+a{
+    text-decoration: none;
+    color: red;
+    font-family: "Times New Roman", Times, serif;
+}
+a:hover{
+    color: darkred;
+}
 .header{
     background-color: #48457a;
 }
@@ -46,20 +53,38 @@ body{
 }
 
 .emailInput{
-    padding: 5px;
-    margin-top: 10px;
-    width: 60%;
+    padding: 2px 0 2px 0;
+    border-width: 1px;
+    width: 50%; 
+    margin-left: 5px; 
+    text-align: center;
+}
+.nameInputFld{
+    border-width: 1px;
+    padding: 2px 0 2px 0;
+    float: left;
+    margin-left: 19px; 
+    width: 44%; 
+    text-align: center;
+}
+.nameInputFld:hover{
+    box-shadow: 5px 5px 5px #313152;
 }
 .emailInput:hover{
     box-shadow: 5px 5px 5px #313152;
-    border: 0;
 }
 .EmailBtn{
-    padding: 5px;
+    clear: both; 
+    width: 95.1%; 
+    margin-left: 19px; 
+    margin-top: 5px; 
+    padding: 2px 0 2px 0;
+    background-color: cadetblue; 
+    border: 1px solid white; 
+    color: white;
 }
 .EmailBtn:hover{
     box-shadow: 5px 5px 5px #313152;
-    border: 0;
 }
 .main{
     z-index: -1;
@@ -69,12 +94,12 @@ body{
 }
 
 .wrapper{
-    width: 80%;
+    width: 90%;
 }
 
 .mainBody{
     padding: 5px;
-    height: 96%;
+    height: 97%;
     width: 80%;
     background-color: white;
     float: left;
@@ -86,9 +111,9 @@ body{
 .contactsPanel{
     border-radius: 5px;
     float: left;
-    width: 17%;
+    width: 17.5%;
     margin-left: 10px;
-    height: 30%;
+    height: 97%;
     background-color: #d8d8d8;
     box-shadow: #46446a 5px 5px 5px;
     padding: 5px;
@@ -112,7 +137,7 @@ body{
     margin-top: 20px;
     font-family: Georgia;
     color: darkblue;
-    box-shadow:  #bcbcbc 5px 5px 5px;
+    box-shadow:  #bcbcbc 2px 2px 3px;
     float: left;
     /*background-color: #9b9bff;*/
     background-color: #f3ecec;
@@ -128,43 +153,50 @@ body{
 }
 .MyInfoCard{
     clear: both;
-    padding-top: 20px;
+    padding-top: -5px;
 }
 .MySpecialtiesCard{
     margin-right: 20px;
     margin-top: 20px;
     font-family: Georgia;
     color: darkblue;
-    box-shadow:  #bcbcbc 5px 5px 5px;
+    box-shadow:  #bcbcbc 2px 2px 3px;
     float: right;
     /*background-color: #9b9bff;*/
     background-color: #f3ecec;
-    height: 160px;
+    height: 170px;
     width: 350px;
     padding: 5px;
     
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-    -o-transform: rotate(4deg);
-    -ms-transform: rotate(4deg);
-    transform: rotate(4deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
     
 }
 
 .MySpecialtiesCard ul li{
     list-style-type: none;
 }
-
+.AboutPage{
+    display: none;
+    text-align: justify;
+}
 .ProjectsPage{
     display: none;
 }
-.ProjectsInfoTable{
+#ProjectsInfoTable{
     width: 100%;
 }
-.ProjectsInfoTable tr td{
+#ProjectsInfoTable thead tr td{
     margin: 10px;
     padding: 5px;
     text-align: center;
+}
+#ProjectsInfoTableMobile{
+    width: 100%;
+    display: none;
 }
 .BlogsPage{
     display: none;
@@ -172,11 +204,189 @@ body{
 .footer{
     background-color: red;
 }
+#MainBlogWindow{
+    border-top: 1px solid #d8d8d8;
+    height: 94.5%; 
+    width: 99%; 
+    padding-top: 5px;
+    overflow-y: auto;
+}
+#BlogContent{
+    text-align: justify;
+}
+#BlogImage{
+    margin-right: 5px;
+    width: 190px; 
+    height: 180px; 
+    float: left;
+}
+#BlogTitle{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#BlogSignature{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
 
 @media only screen and (max-width: 1400px){
     .wrapper{
         width: 95%;
     }
+    body{
+        position: initial;
+        height: auto;
+        /*overflow-y: auto;*/
+        
+    }
+    .MyInfoCard{
+        padding-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .main{
+        position: initial;
+        height: auto;
+    }
+    .mainBody{
+        float: none;
+        width: 95%;
+        height: auto;
+        border-radius: 0;
+    }
+    .contactsPanel{
+        float: none;
+        width: 95%;
+        height: auto;
+        border-radius: 0;
+        margin-left: 0;
+    }
+    .contactsPanel ul li{
+        display: inline-block;
+    }
+    .wrapper{
+        width: 97%;
+    }
+    
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        width: auto;
+        margin: auto;
+        padding: auto;
+    }
+    .nameInputFld{
+        margin: auto;
+        float: none;
+        width: 95.1%; 
+        margin-left: 19px; 
+    }
+    .emailInput{
+        margin: auto;
+        float: none;
+        width: 95.1%; 
+        margin-left: 19px; 
+        margin-top: 2px;
+    }
+    .wrapper{
+        width: 100%;
+        margin: auto;
+        padding: auto;
+    }
+    .main{
+        padding: auto;
+        margin: auto;
+    }
+    .MyBizCard{
+      margin-left: 0;
+      float: none;
+      width: auto;
+      margin: auto;
+      margin-top: 20px;
+      
+      -webkit-transform: rotate(-1deg);
+      -moz-transform: rotate(-1deg);
+      -o-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+      transform: rotate(-1deg);
+    }
+    .MySpecialtiesCard{
+        margin-left: 0;
+        float: none;
+        width: auto;
+        margin: auto;
+        margin-top: 10px;
+        
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+        -o-transform: rotate(2deg);
+        -ms-transform: rotate(2deg);
+        transform: rotate(2deg);
+    }
+    .headerCurve{
+        height: 125px;
+    }
+    .mainHeader ul li{
+        width: auto;
+        padding: 0;
+    }
+    .mainHeader ul{
+        margin-bottom: 10px;
+    }
+    .mainBody{
+        width: 95%;
+        margin-left: 0;
+    }
+    .contactsPanel{
+        width: 95%;
+        margin-left: 0;
+    }
+    .mainHeader{
+        width: 400px;
+    }
+    .contactsPanel ul li{
+        width: 95%;
+    }
+    .mainHeader ul li:hover{
+        border: 0;
+    }
+    .mainHeader ul .active{
+        border: 0;
+        border-bottom: 1px solid white;
+    }
+    #ProjectsInfoTableMobile{
+       display: block;
+       margin-top: 10px;
+    }  
+    .ProjectInfoTbody{
+        margin: 5px;
+    }
+    #ProjectsInfoTable{
+        display: none;
+    }
+    .ProjectInfoTitle{
+        background-color: #f3ecec;
+        margin: 10px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .mainHeader{
+        width: 350px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    .mainHeader{
+        width: 300px;
+    }
+    
 }
 
 
