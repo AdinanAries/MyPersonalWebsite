@@ -1,0 +1,1 @@
+//Use Browser cookies to manage state

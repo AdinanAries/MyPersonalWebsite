@@ -365,10 +365,19 @@ a:hover{
     .ProjectInfoTbody{
         margin: 5px;
     }
+    .lastProjectInfoTD{
+        margin-bottom: 10px;
+        border-bottom: 5px solid white;
+    }
+    .ProjectInfoData{
+        background-color: antiquewhite;
+        padding: 5px;
+    }
     #ProjectsInfoTable{
         display: none;
     }
     .ProjectInfoTitle{
+        color: tomato;
         background-color: #f3ecec;
         margin: 10px;
         padding: 5px;
