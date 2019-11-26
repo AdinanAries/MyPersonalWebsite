@@ -272,8 +272,19 @@ a:hover{
     }
     
 }
+#BizCardAriesLabLogo{
+    width: 140px; 
+    height: 40px;
+}
 
 @media only screen and (max-width: 500px){
+    .BizCardAriesLabLogo{
+        width: 100px; 
+        height: 40px;
+    }
+    /*#SpecialtySQLImg{
+        display: none;
+    }*/
     body{
         width: auto;
         margin: auto;
@@ -397,5 +408,3 @@ a:hover{
     }
     
 }
-
-
