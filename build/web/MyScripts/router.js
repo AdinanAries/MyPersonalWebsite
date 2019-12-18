@@ -1,5 +1,5 @@
 //my router file
-
+//window.location.toString() returns the curren page URL
 var Url = window.location.toString();
 
 //alert(Url);

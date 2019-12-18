@@ -1,4 +1,5 @@
 *{
+    -webkit-appearance: none;
     margin: 0;
     padding: 0;
 }
@@ -96,7 +97,10 @@ a:hover{
 .wrapper{
     width: 90%;
 }
-
+.MyInfoCard{
+    height: 66%;
+    overflow-y: auto;
+}
 .mainBody{
     padding: 5px;
     height: 97%;
@@ -179,6 +183,10 @@ a:hover{
 .MySpecialtiesCard ul li{
     list-style-type: none;
 }
+.MySpecialtiesCard ul li img{
+    width: 50px;
+    height: 50px;
+}
 .AboutPage{
     display: none;
     text-align: justify;
@@ -231,7 +239,28 @@ a:hover{
     margin-bottom: 10px;
 }
 
+#BizCardAriesLabLogo{
+    width: 140px; 
+    height: 40px;
+}
+
 @media only screen and (max-width: 1400px){
+    .main{
+       height: auto;
+    }
+    #MainBlogWindow{
+        height: auto; 
+        
+    }
+    .contactsPanel{
+        height: auto;
+    }
+    .mainBody{
+        height: auto;
+    }
+    .MyInfoCard{
+        height: auto;
+    }
     .wrapper{
         width: 95%;
     }
@@ -247,6 +276,7 @@ a:hover{
 }
 
 @media only screen and (max-width: 1300px){
+    
     .main{
         position: initial;
         height: auto;
@@ -272,19 +302,25 @@ a:hover{
     }
     
 }
-#BizCardAriesLabLogo{
-    width: 140px; 
-    height: 40px;
-}
 
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 700px){
+    
     .BizCardAriesLabLogo{
         width: 100px; 
         height: 40px;
     }
-    /*#SpecialtySQLImg{
-        display: none;
-    }*/
+    .MySpecialtiesCard{
+        height: 190px;
+    }
+    .MySpecialtiesCard ul li img{
+    width: 35px;
+    height: 35px;
+}
+    #MainBlogWindow{
+        height: auto; 
+        
+    }
     body{
         width: auto;
         margin: auto;
@@ -317,7 +353,7 @@ a:hover{
       float: none;
       width: auto;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 5px;
       
       -webkit-transform: rotate(-1deg);
       -moz-transform: rotate(-1deg);
@@ -337,6 +373,10 @@ a:hover{
         -o-transform: rotate(2deg);
         -ms-transform: rotate(2deg);
         transform: rotate(2deg);
+    }
+    .MySpecialtiesCard img{
+        width: 48px;
+        height: 48px;
     }
     .headerCurve{
         height: 125px;
@@ -364,6 +404,7 @@ a:hover{
     }
     .mainHeader ul li:hover{
         border: 0;
+        border-bottom: 1px solid white;
     }
     .mainHeader ul .active{
         border: 0;
@@ -393,6 +434,10 @@ a:hover{
         margin: 10px;
         padding: 5px;
     }
+    #BizCardAriesLabLogo{
+        width: 100px; 
+        height: 30px;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -406,5 +451,8 @@ a:hover{
     .mainHeader{
         width: 300px;
     }
-    
+    .mainHeader ul .active{
+        border: 0;
+        border-bottom: 1px solid white;
+    }
 }
