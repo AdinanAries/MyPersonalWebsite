@@ -2,6 +2,8 @@
     -webkit-appearance: none;
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
+    font-size: 15px;
 }
 body{
     position: fixed;
@@ -74,6 +76,9 @@ a:hover{
 .emailInput:hover{
     box-shadow: 5px 5px 5px #313152;
 }
+.MobileExtras{
+    display: none;
+}
 .EmailBtn{
     clear: both; 
     width: 95.1%; 
@@ -144,7 +149,7 @@ a:hover{
     box-shadow:  #bcbcbc 2px 2px 3px;
     float: left;
     /*background-color: #9b9bff;*/
-    background-color: #f3ecec;
+    background-color: #e1e1e1;
     height: 160px;
     width: 350px;
     padding: 5px;
@@ -167,7 +172,7 @@ a:hover{
     box-shadow:  #bcbcbc 2px 2px 3px;
     float: right;
     /*background-color: #9b9bff;*/
-    background-color: #f3ecec;
+    background-color: #e1e1e1;
     height: 170px;
     width: 350px;
     padding: 5px;
@@ -179,13 +184,19 @@ a:hover{
     transform: rotate(3deg);
     
 }
+.Extras table tbody tr td:hover{
+    color: tomato;
+}
+.MobileExtras table tbody tr td:hover{
+    color: tomato;
+}
 
 .MySpecialtiesCard ul li{
     list-style-type: none;
 }
 .MySpecialtiesCard ul li img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .AboutPage{
     display: none;
@@ -281,6 +292,12 @@ a:hover{
         position: initial;
         height: auto;
     }
+    .MobileExtras{
+        display: block;
+    }
+    .Extras{
+        display: none;
+    }
     .mainBody{
         float: none;
         width: 95%;
@@ -311,15 +328,14 @@ a:hover{
         height: 40px;
     }
     .MySpecialtiesCard{
-        height: 190px;
+        height: 170px;
     }
     .MySpecialtiesCard ul li img{
-    width: 35px;
-    height: 35px;
-}
+        width: 32px;
+        height: 32px;
+    }
     #MainBlogWindow{
-        height: auto; 
-        
+        height: auto;
     }
     body{
         width: auto;
@@ -345,15 +361,16 @@ a:hover{
         padding: auto;
     }
     .main{
-        padding: auto;
-        margin: auto;
+        padding: 0;
+        margin: 0;
+        padding-top: 125px;
     }
     .MyBizCard{
       margin-left: 0;
       float: none;
       width: auto;
       margin: auto;
-      margin-top: 5px;
+      margin-top: 0;
       
       -webkit-transform: rotate(-1deg);
       -moz-transform: rotate(-1deg);
@@ -389,11 +406,12 @@ a:hover{
         margin-bottom: 10px;
     }
     .mainBody{
-        width: 95%;
+        width: 97%;
         margin-left: 0;
+        margin-bottom: 0px;
     }
     .contactsPanel{
-        width: 95%;
+        width: 97%;
         margin-left: 0;
     }
     .mainHeader{
@@ -438,6 +456,12 @@ a:hover{
         width: 100px; 
         height: 30px;
     }
+    .header{
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 400px){
