@@ -223,9 +223,14 @@ a:hover{
 .footer{
     background-color: red;
 }
+#AboutContent{
+    height: calc(100vh - 150px);
+    width: 99%;
+    overflow-y: scroll;
+}
 #MainBlogWindow{
-    border-top: 1px solid #d8d8d8;
-    height: 94.5%; 
+    /*border-top: 1px solid #d8d8d8;*/
+    height: calc(100vh - 200px); 
     width: 99%; 
     padding-top: 5px;
     overflow-y: auto;
