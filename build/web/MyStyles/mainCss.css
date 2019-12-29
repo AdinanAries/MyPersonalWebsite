@@ -292,7 +292,9 @@ a:hover{
 }
 
 @media only screen and (max-width: 1300px){
-    
+    #AboutContent{
+        height: auto;
+    }
     .main{
         position: initial;
         height: auto;
