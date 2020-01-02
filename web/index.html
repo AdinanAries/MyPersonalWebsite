@@ -301,10 +301,10 @@
                                     <img id='BlogImage' style='' src='MyImages/fullStackDefaulPic.jpg' alt='Default Blog Photo'/>
                                     <div id='BlogContent'>
                                         <p>
-                                            Web applications usually have 3 main different parts; The Frontend, Backend and Database. Each one of these separate parts of the application has a different
+                                            Web applications usually have 3 main different layers; The Frontend, Backend and Database. Each one of these layers of the application has a different
                                             set of responsibilities which it is meant to contribute to the overall application's functionalities.
                                             In order to be a fullstack web developer, you must have the knowledge that spans everything from the frontend to the backend to the database (We'll talk about what each one of them is in a bit).
-                                            Quite not literally do you have to know every little information about all the layers in order to become a fullstack developer. However, you must at least have good enough knowledge on each one of the layers to be able to build a fully working application since that's going to be mostly your responsibility as a fullstack developer
+                                            Quite not literally do you have to know every little piece of information about all three layers in order to become a fullstack developer. However, you must at least have good enough knowledge on each one of the layers in order to be able to build a fully working application, since that's going to be mostly your responsibility as a fullstack developer
                                         </p>
                                         <br/>
                                         <p>
@@ -314,21 +314,21 @@
                                         </p>
                                         <br/>
                                         <p>
-                                            We'll begin this journey, by talking about the frontend, then the backend, then to the database. We'll also discuss some of the sideliner technologies which are also as relevant as the main technologies or languages for the fullstack web development.
-                                            Some of these technologies are source control, unit testing, package management, etc. We'll also take a look at some various web development frameworks that make web development easier for the developers.
-                                            Then lastly, we'll introduce the different ways that some web development technologies are stacked together in the form of common patters called as the Software Stacks.  
+                                            As with the order in which I approach this blog content, I'll be introducing the frontend first, then to the backend, and then to the database layer. We'll also be discussing some of the sideliner technologies which are also as relevant as the main technologies or languages used for the three main layers of the fullstack web development.
+                                            Some of these sideliner technologies are source control, unit testing, package management, etc. We'll also take a look at some various web development frameworks. Frameworks provide developers with pre-written code and various tools which help make web development easier for them.
+                                            Then lastly, I'll also introduce some of the different ways that various frontend technologies are stacked together with various backend and database technologies in varying ways that makeup different flavors of fullstack web applications. These combinations of frontend technologies with backend and database technologies to build the web applications are called as the Software Stacks.  
                                         </p>
                                         <br/>
                                         <p>
-                                            Without any further ado, lets start breaking it down in order to give you the bigger and better picture on how you can achieve this.
+                                            Without any further ado, lets start breaking it down in order to give you the bigger and better picture on how you can become a fullstack web developer.
                                         </p>
                                             
                                         <br/>
                                         <p style='font-weight: bolder; color: darkblue; text-align: center;'>THE FRONTEND</p>
                                         <br/>
                                         <p>
-                                          The Frontend is the part of the application that the end users interact with. Its main purpose is to provide the end user with some form of presentation where to interact with the application. It is basically a presentation medium for input/output between the User and the Application.
-                                          The diagram below demonstrates how the frontend(browser), the backend and the database exist relative to one another.
+                                          The Frontend is the part of the application that the end users interact with. Its main purpose is to provide the end user with some form of visual presentation where to interact with the application. It is the web page part of the application whose code translates directly to the visual components such as buttons, menus, images, texts, etc. that the users see on the web page.
+                                          The diagram below demonstrates how the frontend(browser), the backend and the database exist relative to each other.
                                         </p>
                                         <center><img src="MyImages/demostrateFullstackPic.png" alt="" style="margin: 10px; max-width: 400px; height: auto;"/></center>
                                         
@@ -337,15 +337,15 @@
                                         </p>
                                         <br/>
                                         <p>
-                                            This blog wont dive into any particular programming language, instead I'll give you a brief explanation of what each language is responsible for. I'll include links for resources to learn more about some of the programming languages I'll be introducing in this blog.
+                                            This blog wont dive into any particular programming language, instead I'll give you a brief explanation of what each language is responsible for. I'll then include links for resources to learn more about some of the programming languages I'll be introducing in this blog.
                                         </P>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>HTML5:</span> Every web page is made up of elements ( like text, pictures, boxes and other shapes, etc. ) which define the content of the web page. These Elements are coded into a file with a <span style='color: darkblue;'>".html"</span> file extension and is of the HTML syntax.
+                                            <span style='font-weight: bolder; color: darkblue;'>HTML5:</span> Every web page is made up of elements ( like text, pictures, forms, boxes and other shapes, etc. ) which define the content of the web page. These Elements are coded into a file with a <span style='color: darkblue;'>".html"</span> file extension and is of the HTML syntax.
                                             This makes it possible for the web browsers to read and display the web page from the file. The web page elements are represented in code using HTML tags. The HTML elements are usually made up of an open and a close tags (like so, <span style='color: darkblue;'>&lt;openTag&gt; content here &lt;/closeTag&gt;</span>). 
-                                            In between the open and close tags is where to put the main content of the element which should be displayed on the web page. Elements have names which you place inside of the open and close tags (like so, <span style='color: darkblue;'>&lt;elementName&gt; content here &lt;/elementName&gt;</span>), and properties/attributes which you can place only in
+                                            In between the open and close tags is where to put the main content of the element which should be displayed on the web page. Elements have names which you place inside of the open and close tags (like so, <span style='color: darkblue;'>&lt;elementName&gt; content here &lt;/elementName&gt;</span>), and properties/attributes which you can only place in
                                             the <span style='color: darkblue;'>&lt;openTag&gt;</span> in the form of <span style='color: darkblue;'>property="value"</span> (like so <span style='color: darkblue;'>&lt;elementName property="value"&gt;</span>). The element names and attributes help the browser understand what type of element they are and how to display them on the web page. 
-                                            The picture below is a typical example of an HTML element.
+                                            The picture below is a typical example of an HTML element for adding paragraphs to your web page. It has a default element name of "p", and one "class" attribute with the attribute value as "nice". You need not to worry about what a class attribute is for now, of course that is if you don't already know what it is. You can learn about that later when you click on the HTML5 link I've provided below. This picture is only meant to demonstrate to you how HTML elements are constructed.
                                         </p>
                                         <center>
                                             <img src="MyImages/anatomy-of-an-html-element.png" alt="" style="margin: 10px; max-width: 400px; height: auto;"/>
@@ -354,40 +354,41 @@
                                         </center>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>CSS3:</span> Webpages don't only have content, they also have designs. In order to make your webpage look attractive to the user, you need to write code that customize the appearances of the elements on the page. CSS3 is the language used for styling your webpage and making it look how attractive you want it to look.
+                                            <span style='font-weight: bolder; color: darkblue;'>CSS3:</span> Web pages don't only contain the raw information and interactive buttons, they also have designs which make how the pages appear look more attractive to the end users. Also, the design makes it easy for the users to find the various components of the User Interface (UI for short. UI is another name for the web page). This makes it easy for the users to use the application which, as a result, improves the feeling they experience while using the application.
+                                            In order to make your web page look attractive to the user, you need to write code that customize the appearances of the elements on the page. CSS3 is the language used for styling your webpage and making it look how attractive you want it to look.
                                             Example, if you want the heading of some information on the web site to be of specific font, color, size, etc, you do that in CSS3 code, if you want the user's profile picture to be shaped as a circle  instead of a rectangle, you do that in CSS3 code as well. <a href="https://www.w3schools.com/css/">Click here for a beginners' CSS3 tutorial</a>
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>Javascript:</span> Modern websites are very interactive in that, the web pages don't get refreshed or redirected for every user click. Users are able to stay on the same webpage and perform various activities that change the content on different parts of the same web page without having to refresh the webpage. This is achieved using Javascript code. 
-                                            In order to add some interactivity to the webpages, you need to write javascript code which get executed inside the browser in response to various user activities. For example, when the user clicks on a drop-down menu icon, some javascript code is executed so that the actual drop-down menu appears on the screen. 
+                                            <span style='font-weight: bolder; color: darkblue;'>Javascript:</span> Modern websites are very interactive in that, the web pages don't get refreshed or redirected for every user click. Users are able to stay on the same web page while performing various activities that change the contents on different parts of the same web page without having to refresh the webpage. This is achieved using Javascript code. 
+                                            In order to add such interactivity to the webpages, you need to write javascript code. The javascript code gets executed inside the browser in response to various user activities. For example, when the user clicks on a drop-down menu icon, some javascript function is executed so that the actual drop-down menu appears on the screen. 
                                             Javascript can be quite heavy to get your head around if you have no prior programming experience. <a href="https://www.w3schools.com/js/" >Click here for a beginners' Javascript tutorial</a>
                                         </p>
                                         <br/>
                                         <p>
                                             As a  summary of what we've covered so far,  Frontend is the part of the application that the end user interacts with in order to use the application. It contains all the visual elements such as forms, buttons, menus, window panels, etc.
-                                            In order to build this kind of presentation which can be displayed by the web browser, you create an html page which contains html elements written of the HTML5 language syntax, then add your design definitions using CSS3 code.
-                                            Modern webpages aren't static pages with fixed contents, they allow the users to change parts of the webpages without having to refresh the pages all the time. Javascript is the language for implementing the behavioural part of the frontend. 
+                                            In order to build the type of User Interface which can be displayed by the web browser, you create a HTML file which contains HTML elements written of the HTML5 language syntax, then add your design definitions using CSS3 code.
+                                            Modern web pages allow the users to change the contents on different parts of the page without having to refresh the entire page. Javascript code lets the end users run functions that help them interact with different parts of the web page without needing a full page refresh. 
                                         </p>
                                         <br/>
                                         <p>
-                                            So far we've covered the first part of the application, now lets consider looking at the backend and how its different from the frontend.
+                                            So far we've covered the first part of the application (the frontend), now lets consider looking at the backend and how it differs from the frontend.
                                         </p>
                                         <br/>
                                         
                                         <p style='font-weight: bolder; color: darkblue; text-align: center;'>THE BACKEND</p>
                                         <br/>
                                         <p>
-                                            The backend  of every software application is that which the end user isn't allowed to directly access its code, instead, the user only gets a feel of what exists in the backend by invoking its functions through interacting with the frontend. 
-                                            This part of the application is responsible for some of the most complex applications functions and processes, such as user authentication, database interaction, data processing etc. When it comes to the programming languages for building the backend,
-                                            there is a vast variety of languages to learn in order to write backend code and these languages usually have steep learning curves. This blog isn't meant to teach any set of specific languages, but what I will be doing is briefly introducing some of the
-                                            very popular backend languages so as to give you a feel of what the backend  may comprise of. Some backend languages to condiser include C++, Java (not the same as Javascript), Python, C# or .Net, Ruby, PHP, and even Javascript ( yes, you can use javascript on the backend too, it is called Node.js ).
+                                            The backend  of every software application is that which the end user isn't allowed to directly access its code. Instead, the user only gets a feel of what exists in the backend by invoking (same as activating) the functions that exists there through interacting with the frontend. 
+                                            This part of the application is responsible for most of the very complex applications functions and processes, such as user authentication, database interaction, and most of the complex data processing, etc. When it comes to the programming languages for building the backend,
+                                            there is quite many variety of languages that you can learn and use. The backend languages usually have steep learning curves. This blog isn't meant to teach any set of languages, but what I will do is, introduce some of the
+                                            very popular backend languages and then give you some general information about each one of them so that you can understand the differences among the languages. Some backend languages to condiser include C++, Java (not the same as Javascript), Python, C# or .Net, Ruby, PHP, and even Javascript ( yes, you can use javascript on the backend too, it is called Node.js ).
                                         </p>
                                         <center><img src="MyImages/frontendVsBackend.png" alt="" style="margin: 10px; max-width: 400px; height: auto;"/></center>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>C++: </span>C++ is a low-level system language that requires developers to really think about the hardware level of the code. Programmers working with C++ need to think about where data gets stored. This is called memory management (sometimes pointer arithmetic), and it’s very difficult	to learn But once you understand it, you understand how	computers work at a very deep level. 
-                                            C++	is based off of	the C language,	which	is very	similar	to C++.	Most other programming	languages are build in the C language. However, there really aren’t that many jobs for developers working with C or C++. Still, it’s an important part of the programming language discussion.
+                                            <span style='font-weight: bolder; color: darkblue;'>C++: </span>C++ is a low-level system language that requires developers to really think about the hardware level of the code. Programmers working with C++ need to think about where data gets stored. This is called memory management (sometimes pointer arithmetic), and it’s very difficult	to learn but once you understand it, you understand how	computers work at a very deep level. 
+                                            C++	is based off of	the C language,	which is very similar  to C++.	Most other programming	languages are build in the C language. However, there really aren’t that many jobs for developers working with C or C++. Still, it’s an important part of the programming language discussion.
                                         </p>
                                         <br/>
                                         <p>
@@ -396,25 +397,24 @@
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>C#: </span>.NET (C#) is used a lot by big companies that build desktop applications. C#’s syntax is very similar to Java’s syntax. They’re basically identical. .NET has an awesome IDE (integrated developer environment) and visual studio. In general, it  makes developers’ lives easier.
-                                            There are some other specialized languages that are used by developers who are very specialized, but we’ll get into those later on in this guide.
+                                            <span style='font-weight: bolder; color: darkblue;'>C#: </span>.NET (C#) is used a lot by big companies that build desktop applications. C#’s syntax is very similar to Java’s syntax. They’re basically identical. .NET has an awesome IDE (integrated developer environment). In general, it  makes developers’ lives easier.
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>Python: </span>Python has become popular in data science an scientific computing. It’s used by companies like Google and Yahoo!
-                                            Python’s syntax looks very familiar to Ruby, so if you learn one language it’s pretty easy to pick up the other. There’s one aspect of Python that developers like to discuss, and it’s that it is incredibly “white space sensitive.” This means that the space character needs to be perfect for your code to work. People tend to either love this or hate it
+                                            <span style='font-weight: bolder; color: darkblue;'>Python: </span>Python has become popular in data science and scientific computing. It’s used by companies like Google and Yahoo!
+                                            Python’s syntax looks very familiar to Ruby, so if you learn one language it’s pretty easy to pick up the other. There’s one aspect of Python that developers like to discuss, and it’s that it is incredibly "white space sensitive". This means that the space character needs to be perfect for your code to work. People tend to either love this or hate it
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>Node.js(Javascript): </span>You can also use JavaScript in the back-end as well. When JavaScript is used in the back-end it’s called “NodeJS”.  NodeJS is exactly the same as JavaScript, except it indicates that it is JavaScript that is not running in the front-end.
-                                            Javascript has a number of complicated language features that make it a good choice to learn once you’ve mastered a different programming language.
-                                            Things that make Javascript hard to learn as a first language are anonymous functions, callbacks, prototypical inheritance. Complicated topics like these are deeply ingrained into JavaScript, so even to understand basic code you need to understand a few very complex computer science topics.
-                                            It’s much easier to learn JavaScript after becoming a competent programmer in other languages first.
+                                            <span style='font-weight: bolder; color: darkblue;'>Node.js(Javascript): </span>You can also use javascript in the back-end as well. When javascript is used in the back-end it’s called "NodeJS".  NodeJS is exactly the same as javascript, except it indicates that it is JavaScript that is not running in the front-end.
+                                            javascript has a number of complicated language features that make it a good choice to learn once you’ve mastered a different programming language.
+                                            Things that make javascript hard to learn as a first language are anonymous functions, callbacks, prototypical inheritance. Complicated topics like these are deeply ingrained into javaScript, so even to understand basic code you need to understand a few very complex computer science topics.
+                                            It’s much easier to learn javascript after becoming a competent programmer in other languages first.
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>Ruby: </span>A popular choice for a programming language to use in your back-end	is ruby. It’s a	good option to choose for a first programming language. It’s used by companies like AirBnB, BaseCamp, Groupon and Github.
-                                            The learning curve to master Ruby is less steep in comparison to other programming languages, and after just a short period, you’re able to write and execute Ruby programs.Ruby really stays out of your way as a developer, and if you’re going to be learning advanced 
+                                            <span style='font-weight: bolder; color: darkblue;'>Ruby: </span>A popular choice for a programming language to use in your back-end is ruby. It’s a good option to choose for a first programming language. It’s used by companies like AirBnB, BaseCamp, Groupon and Github.
+                                            The learning curve to master Ruby is less steep in comparison to other programming languages, and after just a short period, you’re able to write and execute Ruby programs. Ruby really stays out of your way as a developer, and if you’re going to be learning advanced 
                                             algorithms it’s a great language to work with them. Think of it as the springboard to learning other programming languages later on at an accelerated pace.
                                         </p>
                                         <br/>
@@ -425,37 +425,37 @@
                                         <br/>
                                         <p>
                                             As a summery of what the backend is, it is the non-visual part of your application which contains code that runs on the server side. The code in the backend is usuaslly invoked indirectly by the users through interacting with the front-end, thus some of the frontend elements or features connect to various processes and functions in the backed code. 
-                                            This code isn't accessible to the end user however, but through their direct actions on frontend elements, the backend code is activated. Some of the common things the backend is used for are user authentication, database read, write, update, delete, etc. operations, complex data processing, etc. Java, C#, Python, Javascript, Ruby, PHP etc. are some of the most popular backend languages.
+                                            The backend code isn't accessible to the end user however, but through their direct actions on frontend elements, the backend code is activated. Some of the common things the backend is used for are user authentication, database read, write, update, delete, etc. operations, complex data processing, etc. C++, Java, C#, Python, Javascript, Ruby, PHP etc. are some of the most popular backend languages.
                                         </p>
                                         <br/>
                                         
                                         <p style='font-weight: bolder; color: darkblue; text-align: center;'>THE DATABASE</p>
                                         <br/>
                                         <p>
-                                            The database is the data storage part of your application. It stores all the data that is generated by the end users and application processes in order to maintain data persistence. For example, if you need the users to create user accounts to be able to use the application, then you are going to need a place to store all this user generated data so that it can be later retrieved and used when needed. 
-                                            Databases are a way to permanently store data. Databases come in two main general categories. These are the Relational or SQL databases and the NoSQL databases.
+                                            The database is the data storage part of your application. It stores all the data that is generated from the end users activities and also from some automated application processes. This helps to maintain the persistence for such user and application process data. For example, if users have to create user accounts in order to use the application, then it will be more efficient to provide a centralized storage location where to keep all the data so that it can be later retrieved and used by the various users. 
+                                            Databases are a way to permanently store data. Databases come in two main general categories. The first type of database is called the Relational databases (also called SQL databases. SQL is pronounced as sequel). And the second type is the NoSQL (pronounced as No-sequel) databases.
                                         </p>
                                         <center><img src="MyImages/CloudDatabasePic.jpg" alt="" style="margin: 10px; max-width: 400px; height: auto;"/></center>
                                         <br/>
                                         <p>
                                             <span style='font-weight: bolder; color: darkblue;'>Relational Databases: </span>Relational databases use a language called SQL (pronounced sequel), which is the Structured Query Language as a protocol to deal with the database. There are several implementations of SQL that are generally used in production: MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL.
-                                            You can connect to these databases with almost any programming language pretty easily.  Although each implementation has slight quirks that cause it to be slightly different	than	the	other	implementations,	the	implementations	are	basically	identical	with small changes that are pretty easy to pick up.
-                                            Once you learn one implementation of SQL, you should be able to be comfortable in other ones. It’s much like learning English in the UK or the US, there are some differences,	but	the	fundamental	language	is	usually	the	same.
+                                            You can connect to these databases with almost any programming language pretty easily.  Although each implementation has slight quirks that cause it to be slightly different than the other implementations, the implementations are basically identical with small changes that are pretty easy to pick up.
+                                            Once you learn one implementation of SQL, you should be able to be comfortable in other ones. It’s much like learning English in the UK or the US, there are some differences, but the fundamental	language is usually the	same.
                                             When you think about the data, it will be stored in a manner similar to an excel sheet: there are tables in the database, which has columns and rows.  And similar to keeping your excel columns understandable, SQL requires you to specify the columns headers up-front.
                                             SQL is a tried and true database and is used by many modern web applications.  Yahoo! uses PostgreSQL extensively, and Google and Facebook both use MySQL.
                                         </p>
                                         <br/>
                                         <p>
-                                            <span style='font-weight: bolder; color: darkblue;'>NoSQL Databases: </span>NoSQL	databases	are	a	relatively	new	phenomenon.		Instead	of	having	a	defined	structure, they allow you to have lists of databases and push anything into the list regardless of the structure.
-                                            Inconsistencies can exist in how the data is stored.  It’s generally considered a bad idea to do so.  You’ll generally want entries to have a consistent structure, but the NoSQL database	is	flexible	and	will	accept	anything.
-                                            There	are	a	number	of	different	NoSQL	databases:	MongoDB, CouchDB, RavenDB, Redis.
-                                            Currently, we don’t really have a standard for how data should be stored inside of NoSQL	databases,	so	each	NoSQL	database	will	be	considerably	different.		That	means if you learn one type of NoSQL database, it won’t translate well to any other implementations.
+                                            <span style='font-weight: bolder; color: darkblue;'>NoSQL Databases: </span>NoSQL	databases are a	relativel new phenomenon. Instead of having a defined	structure, they allow you to have lists of databases and push anything into the list regardless of the structure.
+                                            Inconsistencies can exist in how the data is stored.  It’s generally considered a bad idea to do so.  You’ll generally want entries to have a consistent structure, but the NoSQL database is flexible and	will accept anything.
+                                            There are a	number	of different NoSQL databases: MongoDB, CouchDB, RavenDB, Redis.
+                                            Currently, we don’t really have a standard for how data should be stored inside of NoSQL databases, so each NoSQL database will be considerably different. That means if you learn one type of NoSQL database, it won’t translate well to any other implementations.
                                             MongoDB is one of the most popular implementations of NoSQL databases.  It has a few features that allow for some  interesting properties while scaling up an application to millions of users with hundreds of millions of database requests (or building applications at so-called WebScale).
-                                            Mongo’s features make it a good solution for ad servers and other applications that need	to	handle	hundreds	of	millions	of	requests	a	day.	On	the	flip	side,	it	makes	it	a	poor choice for things like marketplaces, eCommerce sites, or other sites that handle less than 10 million requests per day (which is most web applications)
+                                            Mongo’s features make it a good solution for ad servers and other applications that need to	handle hundreds	of millions of requests	a day. On the flip side, it makes it a poor choice for things like marketplaces, eCommerce sites, or other sites that handle less than 10 million requests per day (which is most web applications)
                                         </p>
                                         <br/>
                                         <p>
-                                           Having covered all three main application concerns, the table is now set for us to look at what being a fullstack web developer means. 
+                                           Having covered all three main application concerns, we are now ready to look at what being a fullstack web developer means. 
                                         </p>
                                         <br/>
                                         
@@ -471,27 +471,27 @@
                                         <br/>
                                         <p>
                                             Web application frameworks help developers do things that happen many times in most web applications with only a few lines of code (instead of dozens or even hundreds of lines of code.) These frameworks make life easier as a developer because they allow you to focus on features that you care about, rather than mundane, repetitive tasks. 
-                                            If	you’re	building	a	web	application,	you	should	definitely	use	a	web	application	framework to help you do the work. Just like with programming languages, you’ll need to choose a framework to learn. In general, if you’ve picked a programming language, there’s a common web application framework that you should learn, too. The main web application framework that developers are using in 2017 include:
-                                            RUBY ON RAILS Ruby on Rails is a web framework that focuses on developer happiness. Its core principle is	Convention	over	Configuration.	What	does	this	mean? Even though there are many ways you can do a particular thing, there is a certain way that the ruby community will deem “correct.” If you do things the correct way, your life will	be	easier.	You’ll	find	that	once	you	understand	how	one	application	works,	you’ll	notice that other applications that are written by other developers will be organized in a remarkably similar manner.
-                                            EXPRESSJS ExpressJS is a web framework that runs on NodeJS. It’s an un-opinionated web framework, meaning that it doesn’t make your life easier if you do things the “right way.” Overall, remember that once you learn one web framework, you’ll be able to learn other frameworks	very	quickly.	The	hard	stuff	to	learn	about	web	application	development	applies to all frameworks equally: you need to understand databases, REST, HTTP requests and more. If you’re good at Rails, you’ll be able to pick up Node/ExpressJS very quickly. If you’re good at ExpressJS, you’ll be able to pick up Rails quickly. 
+                                            If you’re building a web application, you should definitely	use a web application framework to help you do the work. Just like with programming languages, you’ll need to choose a framework to learn. In general, if you’ve picked a programming language, there's a common web application framework that you should learn, too. The main web application framework that developers are using include:
+                                            RUBY ON RAILS Ruby on Rails is a web framework that focuses on developer happiness. Its core principle is Convention over Configuration. What does this mean? Even though there are many ways you can do a particular thing, there is a certain way that the ruby community will deem "correct". If you do things the correct way, your life will be easier. You’ll	find that once you understand how one application works, you’ll	notice that other applications that are written by other developers will be organized in a remarkably similar manner.
+                                            EXPRESSJS ExpressJS is a web framework that runs on NodeJS. It’s an un-opinionated web framework, meaning that it doesn’t make your life easier if you do things the "right way". Overall, remember that once you learn one web framework, you’ll be able to learn other frameworks	very quickly. The hard stuff to	learn about web	application development	applies to all frameworks equally: you need to understand databases, REST, HTTP requests and more. If you’re good at Rails, you’ll be able to pick up Node/ExpressJS very quickly. If you’re good at ExpressJS, you’ll be able to pick up Rails quickly. 
                                             DJANGO Django is an MVC framework, very similar to Ruby on Rails. A ruby on rails developer could pick-up the basics of Django fairly quickly and the reverse is true too.
                                         </p>
                                         <br/>
                                         <p style='font-weight: bolder; color: darkblue; text-align: center;'>HOW DO I LAND MY FIRST FULLSTACK POSITION?</p>
                                         <br/>
                                         <p>
-                                            As a beginner, It is not recommend that you wait until you can do all three application parts before applying for an entry-level position. Not only is that not very practical approach, it is also time consuming as each part of the software stack is a complex ecosystem yet to be explored in order to choose which technologies to learn and use. 
+                                            As a beginner, It is not recommend that you wait until you can do all three application layers before applying for an entry-level position. Not only is that not very practical approach, it is also time consuming as each part of the software stack is a complex ecosystem yet to be explored in order to choose which technologies to learn and use. 
                                             Also companies are very skeptical, in accepting entry level positions for fullstack developers, since their salary demands are mostly higher than the frontend or backend developers. Another reason, especially for startup to mid-size companies, is that giving an individual who is of entry-level  knowledge, the entire tech stack of the company to manage is not a safe thing to do.
                                         </p>
                                         <br/>
                                         <p>
-                                            Your best bet however is to learn and understand one particular application concern, usually the frontend, well enough to be job market ready for an entry-level position. Applying for entry-level frontend position increases your chances of landing your first job. It then becomes easy to gradually transition and become a fullstack web developer.
+                                            Your best bet however is to learn and understand the languages and technologies used at one layer of the stack, usually the frontend, well enough to be job market ready for an entry-level position. Applying for entry-level frontend position increases your chances of landing your first job. It then becomes easy to gradually transition and become a fullstack web developer.
                                         </p>
                                         <br/>
                                         <p style='font-weight: bolder; color: darkblue; text-align: center;'>FREELANCING AND FULLSTACK WEB DEVELOPMENT</p>
                                         <br/>
                                         <p>
-                                            If your interest is to become a freelance developer, then in certain projects, it may be required that you can do all three parts of the software stack. As for programming language choices, a freelance developer may have free will to choose which languages to use, which usually will depend on their carrear goals, 
+                                            If your interest is to become a freelance developer, then in certain projects, it may be required that you can do all three layers of the software stack. As for programming language choices, a freelance developer may have free will to choose which languages to use, which usually will depend on their carrear goals, 
                                             or may evolve depending on the types of projects that they take.The most important thing to consider when picking which languages to learn is that, the languages you pick are those that widthstand the test of time in this constantly changing software industry. This means that you have to keep an eye on current trends 
                                             and which general direction the web development industry has taken in order to choose the right tools and increase your chances of success and also prevent the possibilities of having to unlearn or relearn, or having to pick new technologies over the ones you're comfortable working with in the near future.
                                         </p>
